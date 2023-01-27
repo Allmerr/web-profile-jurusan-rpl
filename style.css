@@ -1,0 +1,97 @@
+/* utilities */
+@import url("https://fonts.googleapis.com/css2?family=Inspiration&family=Source+Sans+Pro:wght@400;700;900&family=Viga&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+.brand {
+    font-family: "Inspiration";
+    letter-spacing: 3px;
+    font-weight: 500;
+}
+
+/* carasouel */
+.slide {
+    max-height: 93vh;
+    overflow: hidden;
+}
+
+.slide img {
+    height: 100%;
+}
+
+/* sepatah dua kata */
+
+p.text-sepatah {
+    font-size: 1.5em;
+}
+
+a.btn-sepatah {
+    width: 50%;
+    font-family: "Viga";
+}
+
+/* about */
+
+.about .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.iframe-about {
+    width: 100%;
+    height: 400px;
+}
+
+.about .container .right {
+    text-align: justify;
+}
+
+/* news */
+.news .row h2 {
+    font-weight: bold;
+}
+
+.my-card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 2rem;
+}
+
+.my-card-container .card {
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 13%), 0 3px 6px rgb(0 0 0 / 16%);
+}
+
+.my-card-container .card img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/* footer */
+.footer a {
+    color: white;
+}
+
+/* media query */
+@media (max-width: 512px) {
+    /* sepatah dua kata */
+    a.btn-sepatah {
+        width: 100%;
+    }
+
+    /* about */
+    .about .container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .iframe-about {
+        height: 215px;
+    }
+}
